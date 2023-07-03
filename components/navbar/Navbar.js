@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "../UI/Button/Button.css";
-import logo from "../../assets/w2blogo.webp";
+import logo from "../../assets/where2be-logo.webp";
 import discord from "../../assets/discordicon.svg";
 import "./Navbar.css";
 import Image from "next/image";

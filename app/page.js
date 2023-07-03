@@ -4,7 +4,6 @@ import { Navbar, Header, Features, Footer, Demo } from "../components/index";
 import React from "react";
 
 function Home() {
-  
   return (
     <>
       <header className="navbar-bg">

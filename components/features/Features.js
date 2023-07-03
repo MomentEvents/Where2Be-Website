@@ -3,8 +3,8 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import "./Features.css";
 import "../index.css"
-import viewEvents from "../../assets/mock-home-event-details.webp";
-import createEvents from "../../assets/mock-create-event.webp";
+import viewEvents from "../../assets/where2be-mock-home-event-details.webp";
+import createEvents from "../../assets/where2be-mock-create-event.webp";
 import Feature from "./Feature";
 import { FeatureListTop, FeatureListBot } from "./data";
 import AOS from "aos";

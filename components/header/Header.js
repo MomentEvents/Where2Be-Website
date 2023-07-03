@@ -16,7 +16,6 @@ const Header = () => {
     });
   }, []);
 
-
   return (
     <section id="header">
       <div className="container header">

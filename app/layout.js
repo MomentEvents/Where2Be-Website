@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="../assets/w2blogo.png"
+          content="../assets/where2be-logo.png"
         />
       </head>
       <body>{children}</body>

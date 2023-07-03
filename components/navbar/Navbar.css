@@ -39,7 +39,6 @@
   padding: 10px;
 }
 
-
 .navbar__menu {
   display: flex;
   align-items: center;
@@ -92,7 +91,6 @@
   color: #fff; 
   transition-duration: 1s ;
 }
-
 
 .button:hover {
   color: rgb(217, 183, 255);
