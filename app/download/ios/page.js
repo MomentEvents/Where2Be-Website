@@ -1,5 +1,5 @@
 import React from "react";
-import RedirectWindow from '../../components/RedirectWindow/RedirectWindow.jsx';
+import RedirectWindow from '../../../components/RedirectWindow/RedirectWindow.jsx';
 
 export default function IOSDownload() {
   return (

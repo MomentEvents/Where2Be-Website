@@ -1,19 +1,27 @@
 import '../styles/globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Where2Be | Find Events Here',
-  description: 'Created by MomentEvents.',
+  title: 'Where2Be | Find school events',
+  description: 'A central hub for all your school events at UCSD and UIUC.',
   robots: "all",
-  canonical: "https://where2be.app"
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="canonical" href="https://where2be.app" />
+        <meta property="og:title" content="Where2Be" />
+        <meta
+          property="og:description"
+          content="A central hub for all your school events at UCSD and UIUC"
+        />
+        <meta
+          property="og:image"
+          content="../assets/w2blogo.png"
+        />
+      </head>
+      <body>{children}</body>
     </html>
   )
 }
