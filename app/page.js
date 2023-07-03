@@ -1,7 +1,6 @@
 import "./home.css";
 
-import Demo from "../components/demo/Demo.js";
-import { Navbar, Header, Features, Footer } from "../components/index";
+import { Navbar, Header, Features, Footer, Demo } from "../components/index";
 import React from "react";
 
 function Home() {

@@ -84,14 +84,3 @@ section {
   margin: 0 auto;
   color: var(--dark-text);
 }
-
-
-.download {
-  font-size: 1.5em;
-}
-
-.download a {
-  font-size: 1em;
-  color: blue;
-  text-decoration: underline;
-}
