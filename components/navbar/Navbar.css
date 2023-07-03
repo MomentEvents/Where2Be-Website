@@ -1,0 +1,114 @@
+/* Navbar */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.logo-text {
+
+  justify-content: flex-start;
+  color: white;
+}
+
+.navbar {
+  background: #000000;
+  height: 80px;
+  display: flex;
+  justify-content: center;    /* keep in center*/
+  align-items: center;
+  font-size: 40px;  /* .2 times 16px wich is standard website size*/
+  position: sticky;
+  top: 0;
+  z-index: 9990;   /* to make sure its always above the rest of the website*/
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin:  0 auto; /* 0 is top bottom, auto left right*/
+  padding: 10px;
+}
+
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__item a {
+  font-size: 2rem;
+}
+
+.navbar__item {
+  color: #fff;
+  height: 100px;
+}
+
+.navbar__links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.navbar__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 8px 10px;
+  margin-left:20px;
+  /** background-size:1px 200px; /** added*/
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #8f09ee;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ae3cff 0%, #5900b9 99%, #4a0072 100%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b378f1, #6330a1 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff; 
+  transition-duration: 1s ;
+}
+
+
+.button:hover {
+  color: rgb(217, 183, 255);
+}
+
+.navbar__links:hover {
+  color: rgb(149, 68, 255);
+  transition: all 0.5s ease;
+}
+
+.discord-icon {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.discord-icon-mobile{
+  height: 30px;
+}
