@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../UI/Button/Button.css";
 import logo from "../../assets/where2be-logo.webp";
 import discord from "../../assets/discordicon.svg";
@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="navbar__container">
         <div className="logo">
           <div className="logo-container">
-            <Image src={logo} className="logo-text" height="40" alt="Logo" />
+            <Image src={logo} className="logo-text" alt="Logo" height={25} />
           </div>
         </div>
         <div className="navbar__toggle" id="mobile-menu">
