@@ -49,6 +49,7 @@ h1 span:nth-child(1) {
 .release-text {
   text-align: center;
   font-weight: 400;
+  margin-bottom: 10px;
   font-size: 3rem;
   color: #a3a3a3;
 }
@@ -71,10 +72,18 @@ h1 span:nth-child(1) {
   width: 90%;
 }
 
+.header-title {
+  flex-direction: row;
+  margin-bottom: 20px;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
 .header-cta {
   flex-direction: row;
   flex: 1;
-  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

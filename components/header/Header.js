@@ -22,7 +22,7 @@ const Header = () => {
       <div className="container header">
         <div className="aligning-contents-center">
           <div className="header-left" data-aos="fade-right">
-            <div className="header-cta">
+            <div className="header-title">
               <h1>Where</h1>
               <h1 className="secondary-color">2</h1>
               <h1>Be</h1>
