@@ -30,7 +30,7 @@ const Header = () => {
             {/* <div className="header-cta">
               <div className="header-download-buttons">
                 <a
-                  href="https://momentevents.app/ios"
+                  href="https://where2be.app/download/ios"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -39,7 +39,7 @@ const Header = () => {
               </div>
               <div className="header-download-buttons">
                 <a
-                  href="https://momentevents.app/android"
+                  href="https://where2be.app/download/android"
                   target="_blank"
                   rel="noreferrer"
                 >

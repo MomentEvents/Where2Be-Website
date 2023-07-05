@@ -28,7 +28,7 @@ const Navbar = () => {
           {isMobile ? (
             <li className="navbar__btn">
               <a
-                href="https://momentevents.app/discord"
+                href="https://where2be.app/discord"
                 target="_blank"
                 className="button"
                 id="temp-page"
@@ -44,7 +44,7 @@ const Navbar = () => {
           ) : (
             <li className="navbar__btn">
               <a
-                href="https://momentevents.app/discord"
+                href="https://where2be.app/discord"
                 target="_blank"
                 className="button"
                 id="temp-page"

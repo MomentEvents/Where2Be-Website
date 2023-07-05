@@ -14,7 +14,7 @@ const Footer = () => {
                 <FaMapMarkerAlt /> &nbsp; UCSD & UIUC
               </div>
               <div>
-                <FaEnvelope />&nbsp;<a href='mailto:momenteventsapp@gmail.com'>&nbsp; momenteventsapp@gmail.com</a>
+                <FaEnvelope />&nbsp;<a href='mailto:team@where2be.app'>&nbsp; team@where2be.app</a>
               </div>
             </div>
           </div>
