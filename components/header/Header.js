@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
 import "./Header.css";
@@ -22,11 +22,13 @@ const Header = () => {
         <div className="aligning-contents-center">
           <div className="header-left" data-aos="fade-right">
             <h1>
-              <span className="main-text">We make finding events easy</span>
-              <span className="subtitle-text">By students. For students.</span>
+              <span className="main-text">Where2Be:
+                <span className="secondary-color">Your University
+                Events Guide</span>
+              </span>
             </h1>
 
-            <div className="release-text">App coming soon!</div>
+            <div className="release-text">Discover, Connect, and Experience Campus Life Like Never Before</div>
             {/* <div className="header-cta">
               <div className="header-download-buttons">
                 <a

@@ -26,6 +26,8 @@ export default function RootLayout({ children }) {
         <meta property="twitter:title" content={metadata.title} />
         <meta property="twitter:description" content={metadata.description} />
         <meta property="twitter:image" content={metadata.image} />
+        <meta property="image" content={metadata.image} />
+        <meta name="keywords" content="University, Events, Where2Be" />
       </Head>
       <body>{children}</body>
     </html>
