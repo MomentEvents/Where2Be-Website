@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import "./Header.css";
 import "../UI/Button/Button.css";
@@ -33,17 +34,17 @@ const Header = () => {
             </div>
             {/* <div className="header-cta">
               <div className="header-download-buttons">
-                <a
-                  href="https://where2be.app/download/ios"
+                <Link
+                  href="/download/ios"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <Image src={iosdownload} alt="iOS Download" width="200" />
-                </a>
+                </Link>
               </div>
               <div className="header-download-buttons">
-                <a
-                  href="https://where2be.app/download/android"
+                <Link
+                  href="/download/android"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -52,7 +53,7 @@ const Header = () => {
                     alt="Android Download"
                     width="200"
                   />
-                </a>
+                </Link>
               </div>
             </div> */}
           </div>

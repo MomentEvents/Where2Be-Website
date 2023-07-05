@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import "./RedirectWindow.css"
+import "./RedirectWindow.css";
 
 export default function RedirectWindow(props) {
   useEffect(() => {
@@ -10,7 +10,9 @@ export default function RedirectWindow(props) {
   return (
     <div className="redirect_window_container">
       <div className="download">
-        Redirecting. Still waiting? Click <a href={props.url}>here.</a>
+        <span>
+          Redirecting. Still waiting? Click <a href={props.url}>here.</a>
+        </span>
       </div>
     </div>
   );

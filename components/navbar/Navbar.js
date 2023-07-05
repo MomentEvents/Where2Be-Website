@@ -5,6 +5,7 @@ import logo from "../../assets/where2be-logo.webp";
 import discord from "../../assets/discordicon.svg";
 import "./Navbar.css";
 import Image from "next/image";
+import Link from "next/link";
 import useWindowDimensions from '../UseWindowDimensions/useWindowDimensions';
 
 const Navbar = () => {
@@ -27,8 +28,8 @@ const Navbar = () => {
         <ul className="navbar__menu">
           {isMobile ? (
             <li className="navbar__btn">
-              <a
-                href="https://where2be.app/discord"
+              <Link
+                href="/discord"
                 target="_blank"
                 className="button"
                 id="temp-page"
@@ -39,12 +40,12 @@ const Navbar = () => {
                   alt="discord"
                   width={40}
                 />
-              </a>
+              </Link>
             </li>
           ) : (
             <li className="navbar__btn">
-              <a
-                href="https://where2be.app/discord"
+              <Link
+                href="/discord"
                 target="_blank"
                 className="button"
                 id="temp-page"
@@ -56,7 +57,7 @@ const Navbar = () => {
                   width={40}
                 />
                 Join our Discord!
-              </a>
+              </Link>
             </li>
           )}
         </ul>
