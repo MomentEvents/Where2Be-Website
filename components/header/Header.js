@@ -28,7 +28,7 @@ const Header = () => {
               </span>
             </h1>
 
-            <div className="release-text">Discover, Connect, and Experience Campus Life Like Never Before</div>
+            <div className="release-text">See what's happening around your campus now!</div>
             {/* <div className="header-cta">
               <div className="header-download-buttons">
                 <a
