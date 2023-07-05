@@ -21,14 +21,16 @@ const Header = () => {
       <div className="container header">
         <div className="aligning-contents-center">
           <div className="header-left" data-aos="fade-right">
-            <h1>
-              <span className="main-text">Where2Be:
-                <span className="secondary-color">Your University
-                Events Guide</span>
-              </span>
-            </h1>
+            <div className="header-cta">
+              <h1>Where</h1>
+              <h1 className="secondary-color">2</h1>
+              <h1>Be</h1>
+            </div>
 
-            <div className="release-text">See what's happening around your campus now!</div>
+            <div className="release-text">What's happening on campus?</div>
+            <div className="header-cta">
+              <h2>Coming Fall 2023</h2>
+            </div>
             {/* <div className="header-cta">
               <div className="header-download-buttons">
                 <a
@@ -53,9 +55,6 @@ const Header = () => {
                 </a>
               </div>
             </div> */}
-          </div>
-          <div className="header-arrow">
-            <AnimatedArrow></AnimatedArrow>
           </div>
         </div>
       </div>
