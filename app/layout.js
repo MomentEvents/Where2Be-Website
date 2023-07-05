@@ -14,11 +14,11 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="Where2Be" />
         <meta
           property="og:description"
-          content="A central hub for all your school events at UCSD and UIUC"
+          content="A central hub for all your school events"
         />
         <meta
           property="og:image"
-          content="../assets/where2be-logo.png"
+          content="https://i.imgur.com/2iOelx1.png"
         />
       </head>
       <body>{children}</body>

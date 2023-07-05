@@ -26,8 +26,8 @@ const Header = () => {
               <span className="subtitle-text">By students. For students.</span>
             </h1>
 
-            <div className="release-text">Download the app now!</div>
-            <div className="header-cta">
+            <div className="release-text">App coming soon!</div>
+            {/* <div className="header-cta">
               <div className="header-download-buttons">
                 <a
                   href="https://momentevents.app/ios"
@@ -50,7 +50,7 @@ const Header = () => {
                   />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="header-arrow">
             <AnimatedArrow></AnimatedArrow>

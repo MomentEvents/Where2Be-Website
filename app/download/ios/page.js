@@ -3,6 +3,7 @@ import RedirectWindow from '../../../components/RedirectWindow/RedirectWindow.js
 
 export default function IOSDownload() {
   return (
-    <RedirectWindow url={"https://apps.apple.com/us/app/moment-events/id1671447709"}/>
+    // <RedirectWindow url={"https://apps.apple.com/us/app/moment-events/id1671447709"}/>
+    <></>
   );
 }
