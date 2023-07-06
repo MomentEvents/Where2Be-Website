@@ -23,14 +23,14 @@ const Header = () => {
         <div className="aligning-contents-center">
           <div className="header-left" data-aos="fade-right">
             <div className="header-title">
-              <h1>Where</h1>
+              <h1 className="primary-color">Where</h1>
               <h1 className="secondary-color">2</h1>
-              <h1>Be</h1>
+              <h1 className="primary-color">Be</h1>
             </div>
 
             <div className="release-text">What's happening on campus?</div>
             <div className="header-cta">
-              <h2>Coming Fall 2023</h2>
+              <h2 className="primary-color">Coming Fall 2023</h2>
             </div>
             {/* <div className="header-cta">
               <div className="header-download-buttons">

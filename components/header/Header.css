@@ -20,9 +20,14 @@
   color: white;
 }
 
+.primary-color {
+  color: #FFFFFF
+}
+
 .secondary-color {
   color: #AC6AFF
 }
+
 .subtitle-text{
   font-size: 25px
 }
