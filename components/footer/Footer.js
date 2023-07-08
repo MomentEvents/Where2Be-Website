@@ -11,7 +11,7 @@ const Footer = () => {
             <h4>Contact Us</h4>
             <div className="footer-contact u-text-small">
               <div>
-                <FaMapMarkerAlt /> &nbsp; UCSD & UIUC
+                <FaMapMarkerAlt /> &nbsp; USA
               </div>
               <div>
                 <FaEnvelope />&nbsp;<a href='mailto:team@where2be.app'>&nbsp; team@where2be.app</a>
