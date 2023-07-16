@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,17 +10,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Header = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
-
   return (
     <section id="header">
       <div className="container header">
         <div className="aligning-contents-center">
-          <div className="header-left" data-aos="fade-right">
+          <div className="header-left">
             <div className="header-title">
               <h1 className="primary-color">Where</h1>
               <h1 className="secondary-color">2</h1>
