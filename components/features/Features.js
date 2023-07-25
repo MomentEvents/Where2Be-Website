@@ -1,5 +1,4 @@
-"use client"
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import "./Features.css";
 import "../index.css"
@@ -11,18 +10,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Features = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
 
   return (
     <div className="features-background">
       <section id="features">
         <div className="container features">
           <div className="features-content">
-            <div className="features-left1" data-aos="fade-right">
+            <div className="features-left1">
               <Image 
                 src={viewEvents} 
                 alt="View Events" 
@@ -32,7 +26,7 @@ const Features = () => {
                 }}
               />
             </div>
-            <div className="features-right1" data-aos="fade-left">
+            <div className="features-right1">
               {FeatureListTop.map((feature) => (
                 <Feature
                   key={feature.id}
@@ -46,7 +40,7 @@ const Features = () => {
         </div>
         <div className="container features">
           <div className="features-content">
-            <div className="features-left2" data-aos="fade-right">
+            <div className="features-left2">
               {FeatureListBot.map((feature) => (
                 <Feature
                   key={feature.id}
@@ -56,7 +50,7 @@ const Features = () => {
                 />
               ))}
             </div>
-            <div className="features-right2" data-aos="fade-left">
+            <div className="features-right2">
               <Image 
                 src={createEvents} 
                 alt="Create Events" 
