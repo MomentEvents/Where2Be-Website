@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 0 2rem;
+    margin: 0 0 1.5rem;
 }
 
 .date-time-container {
@@ -41,7 +41,16 @@
 }
 
 .description {
+    margin-bottom: 1.5rem;
     padding-right: 5rem;
+}
+
+.interest {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    background-color: #dedede;
 }
 
 @media screen and (max-width: 700px) {
