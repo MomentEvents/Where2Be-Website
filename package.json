@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "date-fns": "^2.30.0",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
     "next": "13.4.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
+    "react-modal": "^3.16.1",
     "react-pdf": "^7.1.2",
     "react-router-dom": "^6.14.1"
   }
