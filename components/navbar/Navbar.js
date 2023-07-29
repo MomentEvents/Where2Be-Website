@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import useWindowDimensions from '../UseWindowDimensions/useWindowDimensions';
 
-const Navbar = ({ showMenu }) => {
+const Navbar = ({ showMenu=true }) => {
   const { width, height, isMobile } = useWindowDimensions();
 
   return (

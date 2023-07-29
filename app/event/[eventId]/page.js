@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Head from 'next/head';
 import picture from "@/assets/where2be-background.webp";
@@ -12,8 +13,19 @@ import { FiCalendar, FiClock } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
 import { TbMapSearch } from "react-icons/tb";
 import { COLORS } from "@/constants/themes";
+import { BasicModal } from "@/components/BasicModal/BasicModal";
+import { useSearchParams, useRouter } from 'next/navigation'
 
 export default async function Event({ params }) {
+    const searchParams = useSearchParams();
+    const showModal = searchParams.get('download');
+    const router = useRouter();
+
+    useEffect(() => {
+        const url = `/event/${params.eventId}/?download=true`;
+        router.push(url);
+    }, []);
+
     const event = await getEvent(params.eventId);
 
     return (
@@ -27,7 +39,6 @@ export default async function Event({ params }) {
                         <meta property="og:image" content={event.picture} />
                         <meta property="og:url" content={`https://where2be.app/event/${event.event_id}`} />
                     </Head>
-                        
 
                     {/* navbar w/o menu */}
                     <header className="navbar-bg">
@@ -106,6 +117,9 @@ export default async function Event({ params }) {
 
                     {/* footer */}
                     <Footer />
+                    
+                    {/* download popup */}
+                    {showModal && <BasicModal path={'/event/' + event.event_id}/>}
                 </>
             ) : (
                 <RedirectWindow url={"https://where2be.app/404"}/>
