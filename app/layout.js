@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content={metadata.description} />
         <meta name="keywords" content="Where2Be, School, Events" />
         <meta property="image" content={metadata.image} />
+        <link rel="canonical" href="https://where2be.app" />
         <title>{metadata.title}</title>
       </head>
       <body>{children}</body>
