@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import useWindowDimensions from '../UseWindowDimensions/useWindowDimensions';
 
-const Navbar = () => {
+const Navbar = ({ showMenu=true }) => {
   const { width, height, isMobile } = useWindowDimensions();
 
   return (
@@ -17,7 +17,9 @@ const Navbar = () => {
       <div className="navbar__container">
         <div className="logo">
           <div className="logo-container">
-            <Image src={logo} className="logo-text" alt="Logo" height={25} />
+            <Link href="/">
+              <Image src={logo} className="logo-text" alt="Logo" height={25} />
+            </Link>
           </div>
         </div>
         <div className="navbar__toggle" id="mobile-menu">
@@ -25,42 +27,45 @@ const Navbar = () => {
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-        <ul className="navbar__menu">
-          {isMobile ? (
-            <li className="navbar__btn">
-              <Link
-                href="/discord"
-                target="_blank"
-                className="button"
-                id="temp-page"
-              >
-                <Image
-                  src={discord}
-                  className="discord-icon-mobile"
-                  alt="discord"
-                  width={40}
-                />
-              </Link>
-            </li>
-          ) : (
-            <li className="navbar__btn">
-              <Link
-                href="/discord"
-                target="_blank"
-                className="button"
-                id="temp-page"
-              >
-                <Image 
-                  src={discord} 
-                  className="discord-icon" 
-                  alt="discord"
-                  width={40}
-                />
-                Join our Discord!
-              </Link>
-            </li>
-          )}
-        </ul>
+        {
+          showMenu &&
+          <ul className="navbar__menu">
+            {isMobile ? (
+              <li className="navbar__btn">
+                <Link
+                  href="/discord"
+                  target="_blank"
+                  className="button"
+                  id="temp-page"
+                >
+                  <Image
+                    src={discord}
+                    className="discord-icon-mobile"
+                    alt="discord"
+                    width={40}
+                  />
+                </Link>
+              </li>
+            ) : (
+              <li className="navbar__btn">
+                <Link
+                  href="/discord"
+                  target="_blank"
+                  className="button"
+                  id="temp-page"
+                >
+                  <Image 
+                    src={discord} 
+                    className="discord-icon" 
+                    alt="discord"
+                    width={40}
+                  />
+                  Join our Discord!
+                </Link>
+              </li>
+            )}
+          </ul>
+        }
       </div>
     </nav>
   );
