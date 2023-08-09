@@ -17,7 +17,9 @@ const Navbar = ({ showMenu=true }) => {
       <div className="navbar__container">
         <div className="logo">
           <div className="logo-container">
-            <Image src={logo} className="logo-text" alt="Logo" height={25} />
+            <Link href="/">
+              <Image src={logo} className="logo-text" alt="Logo" height={25} />
+            </Link>
           </div>
         </div>
         <div className="navbar__toggle" id="mobile-menu">

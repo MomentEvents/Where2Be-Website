@@ -1,18 +1,35 @@
 .event-container {
+    position: relative; /* Establish stacking context */
     display: flex;
     justify-content: center;
     min-height: 100vh;
     padding: 8rem 10rem;
+    background: black;
+    z-index: -1;
+}
+
+.event-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(./../../../assets/where2be-background.webp);
+    background-size:cover;
+    opacity:.1;
+    z-index: -1;  /* Add this line */
 }
 
 .event-text-container {
     flex: 1;
     text-align: left;
+    color: #EEE
 }
 
 .event-text-container h4 {
     font-size: 1.8rem;
-    color: #000;
+    color: #EEE;
 }
 
 .event-image-container {
@@ -33,13 +50,14 @@
 }
 
 .event-title {
-    color: #000;
+    color: #EEE;
     font-size: 6rem;
-    font-weight: 900;
+    font-weight: 600;
     margin: 0 2rem 2rem 0;
 }
 
 .description {
+    color: #BBB;
     margin-bottom: 1.5rem;
     padding-right: 5rem;
 }
@@ -49,7 +67,7 @@
     border-radius: 20px;
     padding: 5px 15px;
     margin-right: 10px;
-    background-color: #dedede;
+    background-color: #9544ff;
 }
 
 @media screen and (max-width: 700px) {
