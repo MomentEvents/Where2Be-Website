@@ -15,6 +15,10 @@ import { TbMapSearch } from "react-icons/tb";
 import { COLORS } from "@/constants/themes";
 import { BasicModal } from "@/components/BasicModal/BasicModal";
 import { useSearchParams, useRouter } from "next/navigation";
+import iosdownload from "../../../assets/iosdownload.webp";
+import androiddownload from "../../../assets/androiddownload.webp";
+import Link from "next/link";
+
 
 const momentAPI = "https://api.momentevents.app/v1.0.1";
 
@@ -112,6 +116,27 @@ export default async function Event({ params }) {
                   style={{ marginRight: 10 }}
                 />
                 <h4 className="u-text-small">{event.visibility}</h4>
+              </div>
+              <h1 className="download-text">Download the app to sign up and get updates to this event!</h1>
+              <div className="header-cta">
+                <div className="header-download-buttons">
+                  <Link href="/download/ios" target="_blank" rel="noreferrer">
+                    <Image src={iosdownload} alt="iOS Download" width="200" />
+                  </Link>
+                </div>
+                <div className="header-download-buttons">
+                  <Link
+                    href="/download/android"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src={androiddownload}
+                      alt="Android Download"
+                      width="200"
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
 
