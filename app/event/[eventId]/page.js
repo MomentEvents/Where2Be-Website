@@ -20,7 +20,7 @@ import androiddownload from "../../../assets/androiddownload.webp";
 import Link from "next/link";
 
 
-const momentAPI = "https://api.momentevents.app/v1.0.1";
+const momentAPI = "https://api.where2be.app/v1.0.1";
 
 export default async function Event({ params }) {
   const searchParams = useSearchParams();

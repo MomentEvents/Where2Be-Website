@@ -1,9 +1,10 @@
 import React from "react";
 import RedirectWindow from '../../../components/RedirectWindow/RedirectWindow.jsx';
+import LINKS from '@/constants/links.js';
 
 export default function IOSDownload() {
   return (
-    <RedirectWindow url={"https://apps.apple.com/us/app/moment-events/id1671447709"}/>
+    <RedirectWindow url={LINKS.AppleStore}/>
 
   );
 }

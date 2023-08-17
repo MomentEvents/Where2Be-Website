@@ -1,10 +1,11 @@
 import React from "react";
 import RedirectWindow from '../../../components/RedirectWindow/RedirectWindow.jsx';
+import LINKS from "@/constants/links.js"
 
 export default function AndroidDownload() {
 return (
     <RedirectWindow
-      url={"https://play.google.com/store/apps/details?id=com.moment.eventsapp"}
+      url={LINKS.GooglePlayStore}
     />
   );
 }

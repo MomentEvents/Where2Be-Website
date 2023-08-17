@@ -1,8 +1,9 @@
 import React from 'react'
 import RedirectWindow from '../../components/RedirectWindow/RedirectWindow.jsx';
+import LINKS from "@/constants/links.js"
 
 export default function Survey() {
   return (
-    <RedirectWindow url={"https://forms.gle/cRnd3bHgF9Wn9V6U8"}/>
+    <RedirectWindow url={LINKS.Survey}/>
   )
 }
