@@ -4,8 +4,9 @@ import LINKS from "@/constants/links.js"
 
 export default function AndroidDownload() {
 return (
-    <RedirectWindow
-      url={LINKS.GooglePlayStore}
-    />
+  <div/>
+    // <RedirectWindow
+    //   url={LINKS.GooglePlayStore}
+    // />
   );
 }
