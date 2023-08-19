@@ -35,7 +35,7 @@ const Header = () => {
                   <Image src={iosdownload} alt="iOS Download" width="200" />
                 </Link>
               </div>
-           </div>
+            </div>
               {/* <div className="header-download-buttons">
                 <Link
                   href="/download/android"
