@@ -124,7 +124,7 @@ export default async function Event({ params }) {
                     <Image src={iosdownload} alt="iOS Download" width="200" />
                   </Link>
                 </div>
-                <div className="header-download-buttons">
+                {/* <div className="header-download-buttons">
                   <Link
                     href="/download/android"
                     target="_blank"
@@ -136,7 +136,7 @@ export default async function Event({ params }) {
                       width="200"
                     />
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
 
