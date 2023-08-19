@@ -21,11 +21,11 @@ const Header = () => {
               <h1 className="primary-color">Be</h1>
             </div>
 
-            <div className="release-text">What's happening on campus?</div>
+            {/* <div className="release-text">What's happening on campus?</div>
             <div className="header-cta">
               <h2 className="primary-color">Coming Fall 2023</h2>
-            </div>
-            {/* <div className="header-cta">
+            </div> */}
+            <div className="header-cta">
               <div className="header-download-buttons">
                 <Link
                   href="/download/ios"
@@ -35,7 +35,7 @@ const Header = () => {
                   <Image src={iosdownload} alt="iOS Download" width="200" />
                 </Link>
               </div>
-           </div> */}
+           </div>
               {/* <div className="header-download-buttons">
                 <Link
                   href="/download/android"
