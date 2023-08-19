@@ -21,8 +21,8 @@ const Header = () => {
               <h1 className="primary-color">Be</h1>
             </div>
 
-            {/* <div className="release-text">What's happening on campus?</div>
-            <div className="header-cta">
+            <div className="release-text">What's happening on campus?</div>
+            {/* <div className="header-cta">
               <h2 className="primary-color">Coming Fall 2023</h2>
             </div> */}
             <div className="header-cta">
