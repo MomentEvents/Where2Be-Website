@@ -1,12 +1,21 @@
 import { parseISO, format } from 'date-fns';
-import '../index.css'
+import { enUS, es } from 'date-fns/locale';
+import '../index.css';
 
-export function Date({ dateString }) {
+// Map locales to their respective `date-fns` locale objects
+const locales = {
+  'en-US': enUS,
+  'es-ES': es
+};
+
+export function Date({ dateString, userLocale = 'en-US' }) {
   const date = parseISO(dateString);
-  return <span dateTime={dateString}>{format(date, 'LLL d, yyyy')}</span>;
+  const localeObj = locales[userLocale] || enUS; // default to 'en-US' if locale is not supported
+  return <span dateTime={dateString}>{format(date, 'LLL d, yyyy', { locale: localeObj })}</span>;
 }
 
-export function Time({ timeString }) {
+export function Time({ timeString, userLocale = 'en-US' }) {
   const time = parseISO(timeString);
-  return <span>{format(time, 'h:mm a').toLowerCase()}</span>;
+  const localeObj = locales[userLocale] || enUS; // default to 'en-US' if locale is not supported
+  return <span>{format(time, 'h:mm a', { locale: localeObj }).toLowerCase()}</span>;
 }
