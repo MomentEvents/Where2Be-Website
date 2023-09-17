@@ -1,5 +1,4 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Head from "next/head";
 import picture from "@/assets/where2be-background.webp";
@@ -19,19 +18,9 @@ import iosdownload from "../../../assets/iosdownload.webp";
 import androiddownload from "../../../assets/androiddownload.webp";
 import Link from "next/link";
 
-
 const momentAPI = "https://api.where2be.app/v1.0.1";
 
 export default async function Event({ params }) {
-  const searchParams = useSearchParams();
-  const showModal = searchParams.get("download");
-  const router = useRouter();
-
-  useEffect(() => {
-    const url = `/event/${params.eventId}/?download=true`;
-    router.push(url);
-  }, []);
-
   const event = await getEvent(params.eventId);
   const interests = await getEventInterests(params.eventId);
 
@@ -117,7 +106,9 @@ export default async function Event({ params }) {
                 />
                 <h4 className="u-text-small">{event.visibility}</h4>
               </div>
-              <h1 className="download-text">Download the app to sign up and get updates to this event!</h1>
+              <h1 className="download-text">
+                Download the app to sign up and get updates to this event!
+              </h1>
               <div className="header-cta">
                 <div className="header-download-buttons">
                   <Link href="/download/ios" target="_blank" rel="noreferrer">
@@ -155,9 +146,6 @@ export default async function Event({ params }) {
 
           {/* footer */}
           <Footer />
-
-          {/* download popup */}
-          {showModal && <BasicModal path={"/event/" + event.event_id} />}
         </>
       ) : (
         <RedirectWindow url={"https://where2be.app/404"} />
