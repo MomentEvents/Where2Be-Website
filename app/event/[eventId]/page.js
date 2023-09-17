@@ -21,8 +21,10 @@ import Link from "next/link";
 const momentAPI = "https://api.where2be.app/v1.0.1";
 
 export default async function Event({ params }) {
-  const event = await getEvent(params.eventId);
-  const interests = await getEventInterests(params.eventId);
+  const [event, interests] = await Promise.all([
+    getEvent(params.eventId),
+    getEventInterests(params.eventId)
+  ]);
 
   return (
     <>
