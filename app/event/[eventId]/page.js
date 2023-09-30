@@ -156,7 +156,7 @@ export default async function Event({ params }) {
   );
 }
 
-export async function getEventInterests(eventId) {
+async function getEventInterests(eventId) {
   try {
     const response = await fetch(momentAPI + `/interest/event_id/${eventId}`, {
       method: "POST",
@@ -189,7 +189,7 @@ export async function getEventInterests(eventId) {
   }
 }
 
-export async function getEvent(eventId) {
+async function getEvent(eventId) {
   try {
     const response = await fetch(momentAPI + `/event/event_id/${eventId}`, {
       method: "POST",
