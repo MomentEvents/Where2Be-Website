@@ -9,7 +9,12 @@ import androiddownload from "../../assets/androiddownload.webp";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Header = () => {
+type HeaderProps = {
+  schoolName: string;
+  isSchoolReleased: boolean;
+};
+
+const Header = (props: HeaderProps) => {
   return (
     <section id="header">
       <div className="container header">
@@ -20,23 +25,25 @@ const Header = () => {
               <h1 className="secondary-color">2</h1>
               <h1 className="primary-color">Be</h1>
             </div>
-
-            <div className="release-text">What's happening on campus?</div>
-            {/* <div className="header-cta">
-              <h2 className="primary-color">Coming Fall 2023</h2>
-            </div> */}
-            <div className="header-cta">
-              <div className="header-download-buttons">
-                <Link
-                  href="/download/ios"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Image src={iosdownload} alt="iOS Download" width="200" />
-                </Link>
-              </div>
+            <div className="release-text">
+              {props.schoolName
+                ? "Your Central " + props.schoolName + " Events Hub"
+                : "What's happening on campus?"}
             </div>
-              {/* <div className="header-download-buttons">
+            <div className="header-cta">
+              {props.schoolName && !props.isSchoolReleased ? (
+                <div className="header-cta">
+                  <h2 className="primary-color">Coming Soon</h2>
+                </div>
+              ) : (
+                <div className="header-download-buttons">
+                  <Link href="/download/ios" target="_blank" rel="noreferrer">
+                    <Image src={iosdownload} alt="iOS Download" width="200" />
+                  </Link>
+                </div>
+              )}
+            </div>
+            {/* <div className="header-download-buttons">
                 <Link
                   href="/download/android"
                   target="_blank"
