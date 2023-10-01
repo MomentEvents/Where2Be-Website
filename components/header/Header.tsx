@@ -4,8 +4,8 @@ import Image from "next/image";
 import "./Header.css";
 import "../UI/Button/Button.css";
 import AnimatedArrow from "../AnimatedArrow/AnimatedArrow";
-import iosdownload from "../../assets/iosdownload.webp";
-import androiddownload from "../../assets/androiddownload.webp";
+import iosdownload from "../../assets/iosdownload.jpg";
+import androiddownload from "../../assets/androiddownload.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

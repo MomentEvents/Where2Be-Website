@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "../UI/Button/Button.css";
-import logo from "../../assets/where2be-logo.webp";
+import logo from "../../assets/where2be-logo.jpg";
 import discord from "../../assets/discordicon.svg";
 import "./Navbar.css";
 import Image from "next/image";

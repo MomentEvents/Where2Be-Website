@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import picture from "@/assets/where2be-background.webp";
+import picture from "@/assets/where2be-background.jpg";
 import "./event.css";
 import "../../home.css";
 import "@/components/index.css";
@@ -14,8 +14,8 @@ import { TbMapSearch } from "react-icons/tb";
 import { COLORS } from "@/constants/themes";
 import { BasicModal } from "@/components/BasicModal/BasicModal";
 import { useSearchParams, useRouter } from "next/navigation";
-import iosdownload from "../../../assets/iosdownload.webp";
-import androiddownload from "../../../assets/androiddownload.webp";
+import iosdownload from "../../../assets/iosdownload.jpg";
+import androiddownload from "../../../assets/androiddownload.jpg";
 import Link from "next/link";
 
 const momentAPI = "https://api.where2be.app/v1.0.1";

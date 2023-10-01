@@ -15,7 +15,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url(./../../../assets/where2be-background.webp);
+    background-image: url(./../../../assets/where2be-background.jpg);
     background-size:cover;
     opacity:.1;
     z-index: -1;  /* Add this line */

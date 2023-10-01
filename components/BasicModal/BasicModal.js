@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import iosdownload from "../../assets/iosdownload.webp";
-import androiddownload from "../../assets/androiddownload.webp";
+import iosdownload from "../../assets/iosdownload.jpg";
+import androiddownload from "../../assets/androiddownload.jpg";
 import './BasicModal.css'
 import "../header/Header.css";
 

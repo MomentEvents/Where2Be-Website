@@ -2,9 +2,9 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import "./Demo.css";
-import joinedEvents from "../../assets/where2be-mock-joined-events.webp";
-import searchEvents from "../../assets/where2be-mock-search-events.webp";
-import hostedEvents from "../../assets/where2be-mock-hosted-events.webp";
+import joinedEvents from "../../assets/where2be-mock-joined-events.jpg";
+import searchEvents from "../../assets/where2be-mock-search-events.jpg";
+import hostedEvents from "../../assets/where2be-mock-hosted-events.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
